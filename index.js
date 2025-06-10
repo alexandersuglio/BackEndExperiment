@@ -15,8 +15,10 @@ app.use(cors());
 
 app.use(express.json());
 
-app.use(express.static(path.join(__dirname, 'FrontEndExperiment')));
-
+if (process.env.NODE_ENV !== 'production') {
+app.use(express.static(path.join(__dirname, '../FrontEndExperiment')));
+  console.log('Serving static frontend from FrontEndExperiment/');
+}
 app.use('/', dogsRouter);
 
 app.listen( PORT, () => console.log(`SQL API Layer turned on at LocalHost ${PORT}`));
