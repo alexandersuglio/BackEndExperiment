@@ -1,10 +1,9 @@
-## 🌐 API Connection "App Layer"
-
+🌐 API Connection – "App Layer"
 The frontend connects to the backend API hosted on Render:
 
-```js
-const API_BASE = 'https://backendexperiment.onrender.com/dogs' '''
+js
+Copy
+Edit
+const API_BASE = 'https://backendexperiment.onrender.com/dogs';
+🔗 Link to Frontend Code: https://github.com/alexandersuglio/FrontEndExperiment
 
----
-
-Link to Front End Code: https://github.com/alexandersuglio/FrontEndExperiment
